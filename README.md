@@ -43,7 +43,7 @@ These questions will help shape your initial process:
 
 ---
 
-### **3. Draft: High-Level Patch and Release Process**
+### Draft: **High-Level Patch and Release Process**
 
 
 #### **Patch and Release Process**
@@ -56,26 +56,41 @@ Applies to all production patches including bug fixes and minor enhancements.
 
 ---
 
-**Step 1: Patch Identification**  
-- Triggered by a bug report or urgent issue.
-- Logged in the issue tracking system.
+### 1. **Identify and Prioritize Issues**
+- **Source**: Bug reports, user feedback, automated monitoring.
+- **Triage**: Classify issues by severity (e.g., critical, major, minor).
+- **Prioritize**: Decide which issues need immediate attention.
 
-**Step 2: Patch Development**  
-- Developer creates a fix in a dedicated branch.
-- Quality steps, for example: Code is peer-reviewed.
+### 2. **Create a Patch Branch**
+- Branch off from the latest stable release (e.g., `release/v1.2.3`).
+- Name it clearly (e.g., `hotfix/critical-login-bug`).
 
-**Step 3: Testing**  
-- **Role** tests the patch in a test/staging environment.
-- Minimum tests: For example regression, smoke, and verification of the fix.
- 
-**Step 4: Approval**  
-- **Role** signs test approval
-- **Role** gives final approval.
+### 3. **Develop the Patch**
+- Apply minimal, targeted changes to fix the issue.
+- Ensure no unrelated features or refactors are included.
+- Quality steps, for example: Code is peer-reviewed, follows coding standards, and includes comments.
 
-**Step 5: Release**  
+### 4. **Test the Patch**
+- **Unit Tests**: Ensure the fix works in isolation.
+- **Regression Tests**: Confirm the fix doesn’t break existing functionality.
+- **QA/UAT**: Optional user acceptance testing for critical patches.
+
+### 5. **Code Review and Approval**
+- Submit a pull request (PR) for review.
+- At least one peer review is recommended.
+- Use automated checks (CI/CD pipelines).
+
+### 6. **Release**  
+- Merge the patch into the release branch.
+- Tag the release (e.g., `v1.2.4`).
 - Patch is deployed to production during a designated release window.
-- Deployment is logged and communicated to stakeholders.
 
-**Step 6: Post-Release Monitoring**  
+### 8. **Communicate the Release**
+- Update changelogs and documentation.
+- Notify stakeholders (e.g., via email, Slack, release notes).
+
+### 9. **Post-Release Monitoring**  
 - Monitor for issues post-release.
 - Rollback if critical issues are found.
+- Conduct a retrospective if the patch was critical.
+- Identify improvements for future patches.
