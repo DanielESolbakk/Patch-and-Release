@@ -40,6 +40,9 @@ These questions will help shape the initial process:
 - **Who is responsible for deploying the patch?**
   - DevOps, developers, QA?
 
+- **Patch and Release checklist?**
+  - Add relevant parts of the process into a checklist to confirm each item's accomplishment
+
 ---
 
 ## 3. Subjects to Include in the Draft Version
