@@ -60,6 +60,13 @@ To ensure that software patches are tested, approved, and released in a controll
 **Scope:**  
 Applies to all production patches including bug fixes and minor enhancements.
 
+**Patch Criteria:**
+Define explicitly what qualifies as a patch vs. a feature release. For example:
+ - Patch: Bug fix, security update..
+ - Minor enhancements: Performance tweak, small UI change..
+ - Minor Release: Backward-compatible enhancements..
+ - Major Release: Breaking changes or new features..
+
 ---
 
 ### 1. **Identify and Prioritize Issues**
@@ -91,11 +98,11 @@ Applies to all production patches including bug fixes and minor enhancements.
 - Tag the release (e.g., `v1.2.4`).
 - Patch is deployed to production during a designated release window.
 
-### 8. **Communicate the Release**
+### 7. **Communicate the Release**
 - Update changelogs and documentation.
 - Notify stakeholders (e.g., via email, Slack, release notes).
 
-### 9. **Post-Release Monitoring**  
+### 8. **Post-Release Monitoring**  
 - Monitor for issues post-release.
 - Rollback if critical issues are found.
 - Conduct a retrospective if the patch was critical.
