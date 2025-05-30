@@ -1,9 +1,22 @@
 # Patch and Release
+
 Draft for a release process. Things to include, thoughts and structure
+
+**Contents:**
+1. [About Patch and Release](#1-about-patch-and-release)
+2. [Key Questions to Resolve](#2-key-questions-to-resolve)
+3. [Subjects to Include in the Draft Version](#3-subjects-to-include-in-the-draft-version)
+4. [Draft: High-Level Patch and Release Process](#4-draft-high-level-patch-and-release-process)
 
 ---
 
-### **1. Key Questions to Ask Yourselves**
+## 1. About Patch and Release
+
+[See in `about-patch-and-release.md`](./about-patch-and-release.md)
+
+---
+
+## 2. Key Questions to Resolve
 
 These questions will help shape the initial process:
 
@@ -29,9 +42,9 @@ These questions will help shape the initial process:
 
 ---
 
-### **2. What to Include in the Draft**
+## 3. Subjects to Include in the Draft Version
 
-#### ✅ **Include in the Basic Process Now**
+### ✅ **Include in the Basic Process Now**
 - Patch definition and scope
 - Trigger for patch creation (e.g., bug report)
 - Approval and testing steps
@@ -39,7 +52,7 @@ These questions will help shape the initial process:
 - Communication plan (who gets notified and how)
 - Ownership and responsibilities
 
-#### ⏳ **Wait to Implement Later**
+### ⏳ **Wait to Implement Later**
 - Automation (CI/CD pipelines, automated testing)
 - Detailed rollback procedures
 - Metrics and KPIs (e.g., patch success rate)
@@ -49,61 +62,6 @@ These questions will help shape the initial process:
 
 ---
 
-### Draft: **High-Level Patch and Release Process**
+## 4. Draft: High-Level Patch and Release Process
 
-
-#### **Patch and Release Process**
-
-**Purpose:**  
-To ensure that software patches are tested, approved, and released in a controlled and predictable manner.
-
-**Scope:**  
-Applies to all production patches including bug fixes and minor enhancements.
-
-**Patch Criteria:**
-Define explicitly what qualifies as a patch vs. a feature release. For example:
- - Patch: Bug fix, security update..
- - Minor enhancements: Performance tweak, small UI change..
- - Minor Release: Backward-compatible enhancements..
- - Major Release: Breaking changes or new features..
-
----
-
-### 1. **Identify and Prioritize Issues**
-- **Source**: Bug reports, user feedback, automated monitoring.
-- **Triage**: Classify issues by severity (e.g., critical, major, minor).
-- **Prioritize**: Decide which issues need immediate attention.
-
-### 2. **Create a Patch Branch**
-- Branch off from the latest stable release (e.g., `release/v1.2.3`).
-- Name it clearly (e.g., `hotfix/critical-login-bug`).
-
-### 3. **Develop the Patch**
-- Apply minimal, targeted changes to fix the issue.
-- Ensure no unrelated features or refactors are included.
-- Quality steps, for example: Code is peer-reviewed, follows coding standards, and includes comments.
-
-### 4. **Test the Patch**
-- **Unit Tests**: Ensure the fix works in isolation.
-- **Regression Tests**: Confirm the fix doesn’t break existing functionality.
-- **QA/UAT**: Optional user acceptance testing for critical patches.
-
-### 5. **Code Review and Approval**
-- Submit a pull request (PR) for review.
-- At least one peer review is recommended.
-- Use automated checks (CI/CD pipelines).
-
-### 6. **Release**  
-- Merge the patch into the release branch.
-- Tag the release (e.g., `v1.2.4`).
-- Patch is deployed to production during a designated release window.
-
-### 7. **Communicate the Release**
-- Update changelogs and documentation.
-- Notify stakeholders (e.g., via email, Slack, release notes).
-
-### 8. **Post-Release Monitoring**  
-- Monitor for issues post-release.
-- Rollback if critical issues are found.
-- Conduct a retrospective if the patch was critical.
-- Identify improvements for future patches.
+[See process in `patch-and-release.md`](./patch-and-release.md)
