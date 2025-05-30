@@ -21,7 +21,7 @@ Using a patch process to release **new features** can be problematic if:
 
 ---
 
-### ✅ When It *Can* Be Okay to Use It for Features
+### When It *Can* Be Okay to Use It for Features
 In **modern CI/CD pipelines**, especially with **feature flags** and **trunk-based development**, it's common to:
 
 - Merge small features into the main branch continuously.
@@ -30,7 +30,7 @@ In **modern CI/CD pipelines**, especially with **feature flags** and **trunk-bas
 
 ---
 
-### 🔁 Better Terminology for Broader Use
+### Better Terminology for Broader Use
 If you're releasing both fixes and features regularly, you might want to use terms like:
 
 - **Incremental release process**

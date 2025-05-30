@@ -5,7 +5,7 @@ Draft for a release process. Things to include, thoughts and structure
 
 ### **1. Key Questions to Ask Yourselves**
 
-These questions will help shape your initial process:
+These questions will help shape the initial process:
 
 - **What types of changes qualify as patches?**
   - Bug fixes only? Minor enhancements?
@@ -14,11 +14,16 @@ These questions will help shape your initial process:
 - **Who approves a patch before release?**
   - QA lead, product owner, dev lead?
 - **What environments do we use (e.g., dev, test, staging, prod)?**
+  - local
+  - dev
+  - test
+  - prod
 - **What testing is required before a patch can be released?**
   - Unit, integration, regression, smoke?
 - **How do we track and document patches?**
   - Ticketing system, changelog, versioning?
 - **What is the rollback plan if a patch fails?**
+
 - **Who is responsible for deploying the patch?**
   - DevOps, developers, QA?
 
@@ -40,6 +45,7 @@ These questions will help shape your initial process:
 - Metrics and KPIs (e.g., patch success rate)
 - Integration with monitoring/alerting tools
 - Full documentation templates
+- Semantic versioning
 
 ---
 
