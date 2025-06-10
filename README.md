@@ -17,43 +17,45 @@ Draft for a release process. Things to include, thoughts and structure
 ---
 
 ## 2. Key Questions to Resolve
-
+### 2.1 Questions to Resolve ASAP
 These questions will help shape the initial process:
 
 - **What types of changes qualify as patches?**
   - Bug fixes only? Minor enhancements?
 - **How frequently do we want to release patches?**
   - On-demand, weekly, bi-weekly?
-- **Who approves a patch before release?**
-  - QA lead, product owner, dev lead?
+- **Who are responsible for what?**
+  - team? individual? role? 
 - **What environments do we use (e.g., dev, test, staging, prod)?**
   - local
   - dev
   - test
   - prod
+- **How do we track and document patches?**
+  - Ticketing system, changelog, versioning
+
+### 2.2 Questions to Resolve Down the Line
+
 - **What testing is required before a patch can be released?**
   - Unit, integration, regression, smoke?
-- **How do we track and document patches?**
-  - Ticketing system, changelog, versioning?
-- **What is the rollback plan if a patch fails?**
 
-- **Who is responsible for deploying the patch?**
-  - DevOps, developers, QA?
+- **What is the rollback plan if a patch fails?**
 
 - **Patch and Release checklist?**
   - Add relevant parts of the process into a checklist to confirm each item's accomplishment
 
 ---
 
-## 3. Subjects to Include in the Draft Version
+## 3. Subjects to Include
 
-### **Include in the Basic Process Now**
+### **Included in the Draft Version of the Process**
 - Patch definition and scope
 - Trigger for patch creation (e.g., bug report)
 - Approval and testing steps
 - Basic release checklist
 - Communication plan (who gets notified and how)
 - Ownership and responsibilities
+- Semantic versioning
 
 ### ⏳ **Wait to Implement Later**
 - Automation (CI/CD pipelines, automated testing)
@@ -61,7 +63,6 @@ These questions will help shape the initial process:
 - Metrics and KPIs (e.g., patch success rate)
 - Integration with monitoring/alerting tools
 - Full documentation templates
-- Semantic versioning
 
 ---
 

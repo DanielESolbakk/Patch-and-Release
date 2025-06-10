@@ -33,7 +33,7 @@ Define explicitly what qualifies as a patch vs. a feature release. For example:
 ---
 
 ### 1. **Identify and Prioritize Issues**
-- **Source**: Bug reports, user feedback, automated monitoring.
+- **Source**: Bug reports, user feedback, automated monitoring. And from where?
 - **Triage**: Classify issues by severity (e.g., critical, major, minor).
 - **Prioritize**: Decide which issues need immediate attention.
 
@@ -46,7 +46,7 @@ Define explicitly what qualifies as a patch vs. a feature release. For example:
 - Ensure no unrelated features or refactors are included.
 - Quality steps, for example: Code is peer-reviewed, follows coding standards, and includes comments.
 
-### 4. **Test the Patch**
+### 4. **Test the Patch** (Does not need a lot of detail in the beginning)
 - **Unit Tests**: Ensure the fix works in isolation.
 - **Regression Tests**: Confirm the fix doesn’t break existing functionality.
 - **QA/UAT**: Optional user acceptance testing for critical patches.
@@ -62,10 +62,10 @@ Define explicitly what qualifies as a patch vs. a feature release. For example:
 - Patch is deployed to production during a designated release window.
 
 ### 7. **Communicate the Release**
-- Update changelogs and documentation.
-- Notify stakeholders (e.g., via email, Slack, release notes).
+- Update changelogs and documentation. Which ones and where?
+- Notify stakeholders (e.g., via email, Slack, release notes). Create stakeholder matrix.
 
-### 8. **Post-Release Monitoring**  
+### 8. **Post-Release Monitoring** (Can be added at a later date)
 - Monitor for issues post-release.
 - Rollback if critical issues are found.
 - Conduct a retrospective if the patch was critical.
