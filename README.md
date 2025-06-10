@@ -47,7 +47,7 @@ These questions will help shape the initial process:
 
 ## 3. Subjects to Include in the Draft Version
 
-### ✅ **Include in the Basic Process Now**
+### **Include in the Basic Process Now**
 - Patch definition and scope
 - Trigger for patch creation (e.g., bug report)
 - Approval and testing steps

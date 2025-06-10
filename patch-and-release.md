@@ -11,10 +11,22 @@ Applies to all production patches including bug fixes and minor enhancements.
 
 **Patch Criteria:**
 Define explicitly what qualifies as a patch vs. a feature release. For example:
- - Patch: Bug fix, security update..
- - Minor enhancements: erformance tweak, small UI change..
+ - Patch/Minor enhancements: Bug fix, security update, performance tweak, small UI change..
  - Minor Release: Backward-compatible enhancements..
  - Major Release: Breaking changes or new features..
+
+**Responsibilities**:
+| Step                      | Responsible Party |
+|---------------------------|------------------|
+| Identify and prioritize issues | x             |
+| Create a patch branch          | x             |
+| Develop the patch              | x             |
+| Test the patch                 | x             |
+| Code review and approval       | x             |
+| Release                        | x             |
+| Communicate the release        | x             |
+| Post-release monitoring        | x             |
+
 
 ---
 
@@ -24,7 +36,7 @@ Define explicitly what qualifies as a patch vs. a feature release. For example:
 - **Prioritize**: Decide which issues need immediate attention.
 
 ### 2. **Create a Patch Branch**
-- Branch off from the latest stable release (e.g., `release/v1.2.3`).
+- Branch off from the latest stable release (e.g., `release/1.2.4`).
 - Name it clearly (e.g., `hotfix/critical-login-bug`).
 
 ### 3. **Develop the Patch**
@@ -44,7 +56,7 @@ Define explicitly what qualifies as a patch vs. a feature release. For example:
 
 ### 6. **Release**  
 - Merge the patch into the release branch.
-- Tag the release (e.g., `v1.2.4`).
+- Tag the release (e.g., `1.2.4`).
 - Patch is deployed to production during a designated release window.
 
 ### 7. **Communicate the Release**

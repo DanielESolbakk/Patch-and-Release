@@ -1,6 +1,6 @@
 The term **"patch and release"** is often associated with small, targeted fixes—like bug patches or security updates—but **it doesn't have to be limited to that**. In modern software development, especially with Agile and DevOps practices, the boundaries between patching and feature releases are more fluid.
 
-### ✅ When "Patch and Release" Is Appropriate
+### When "Patch and Release" Is Appropriate
 - **Bug fixes**
 - **Security updates**
 - **Performance improvements**
@@ -11,7 +11,7 @@ These are typically **small, low-risk changes** that can be released quickly and
 
 ---
 
-### 🚫 When "Patch and Release" Is *Not* Ideal for New Features
+### When "Patch and Release" Is *Not* Ideal for New Features
 Using a patch process to release **new features** can be problematic if:
 
 - The patch branch bypasses normal QA or feature validation.
