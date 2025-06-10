@@ -9,7 +9,7 @@ To ensure that software patches are tested, approved, and released in a controll
 **Scope:**  
 Applies to all production patches including bug fixes and minor enhancements.
 
-**Patch Criteria:**
+**Patch Criteria:**  
 Define explicitly what qualifies as a patch vs. a feature release. For example:
  - Patch/Minor enhancements: Bug fix, security update, performance tweak, small UI change..
  - Minor Release: Backward-compatible enhancements..
@@ -18,16 +18,16 @@ Define explicitly what qualifies as a patch vs. a feature release. For example:
  (This structure follows semantic versioning)
 
 **Responsibilities**:
-| Step                      | Responsible Party |
-|---------------------------|------------------|
-| Identify and prioritize issues | x             |
-| Create a patch branch          | x             |
-| Develop the patch              | x             |
-| Test the patch                 | x             |
-| Code review and approval       | x             |
-| Release                        | x             |
-| Communicate the release        | x             |
-| Post-release monitoring        | x             |
+| Step                           | Responsible Party |
+|--------------------------------|--------------|
+| Identify and prioritize issues | name/role    |
+| Create a patch branch          | name/role    |
+| Develop the patch              | name/role    |
+| Test the patch                 | name/role    |
+| Code review and approval       | name/role    |
+| Release                        | name/role    |
+| Communicate the release        | name/role    |
+| Post-release monitoring        | name/role    |
 
 
 ---
